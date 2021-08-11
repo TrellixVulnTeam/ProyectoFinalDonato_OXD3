@@ -92,6 +92,11 @@ header
     background-repeat: no-repeat
     background-size: cover
     background-position: center
+    &--lg
+        height: 100%
+        padding: 100px 0
+    @media screen and (max-width:540px)
+        margin-top: 104px
 
 // -----------------------------------------------------------------------------------------------
 // ---------------------------------------- Leaders
@@ -146,6 +151,11 @@ header
             width: 100%
             text-align: center
             margin: auto
+        .about__littleText
+            max-width: 650px
+            text-align: justify
+            margin: 50px auto
+            padding: 0 30px
         .about__video
             width: 100%
             max-width: 600px
@@ -259,8 +269,8 @@ header
 
 .carousel
     padding: 10px
-    max-width: 600px
-    margin: auto
+    max-width: 700px
+    margin: 50px auto 0 auto
 
 .carousel-inner
     border-radius: 20px
@@ -296,6 +306,9 @@ header
 
 .accordion
     padding: 100px 0
+    .accordion-flush
+        max-width: 700px
+        margin: 50px auto
 
 .accordion-button
     font-family: Lora,serif
@@ -306,16 +319,27 @@ header
         box-shadow: none !important
 
 .our__services
-    padding: 100px 0
+    .services__row
+        margin-top: 5rem
+        justify-content: center 
     .services__item
         text-align: center
         margin-bottom: 45px
-        max-width: 260px
+        min-width: 260px
+        width: 33%
+        &--down
+            margin-top: 45px
+        &--up
+            margin-top: -45px
+    .services__item__text
+        max-width: 215px
+        margin: auto
     .service__icon
         width: 55px
         height: 55px
         margin: 25px auto
     .services__button
+        margin-top: 3rem
         width: 100%
         display: flex
         justify-content: center
@@ -420,7 +444,6 @@ footer
         line-height: 2.8rem
 
 .title-container
-    margin-bottom: 50px
     &:after
         width: 40px
         height: 2px
